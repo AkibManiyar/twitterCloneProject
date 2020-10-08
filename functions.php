@@ -2,7 +2,10 @@
 
     session_start();
 
-    $link = mysqli_connect("shareddb-y.hosting.stackcp.net","twitter-313539fda2","b0nba2bqwy","twitter-313539fda2");
+/* Here I had intentionally doesn't included the database credentials. Intead of my database create your new database in MySQL and replace the content with the credential
+as mentioned in the comment */
+
+    $link = mysqli_connect( /*"serverName","databaseName","Password","userName"*/);
 
     if (mysqli_connect_errno()) {
         
